@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techi's Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <!-- 1 -->
+      <div class="navbar-logo">
+        <a href="#">Techi's bell</a>
+      </div>
+
+      <!-- 2 -->
+      <div class="navbar-nav" active>
+        <a href="#">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+
+      <!-- 3 -->
+      <div class="navbar-clock">
+        <div id="clock">
+          <p id="date-time"></p>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar end -->
+  <main>
+    <!-- Hero Section Start -->
+    <section id="hero">
+      <div class="hero-wrap">
+        <div class="hero-left">
+          <div class="hero-txt">
+            <p class="hero-p">I'm <span class="hero-span">Techi</span></p>
+            <p class="hero-p">a Software Engineering Student</p>
+            <p id="hero-p-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci, nihil. Expedita rem temporibus dolores facilis! Sunt
+              ipsa, voluptates officia illum, nostrum facilis, laborum
+              voluptatum blanditiis deleniti soluta aspernatur sapiente.
+              Saepe.
+            </p>
+            <a href="#contact" class="cta">Contact Me!</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="poto">
+            <img id="hero-img" src="./assets/img/img-2.jpg" alt="poto techi" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section Start -->
+    <section id="about">
+      <div class="about-wrap">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>
+            Hi, I'm Techi, a passionate Software Engineering student. Here are
+            a few things about me:
+          </p>
+          <ul>
+            <li>I am currently studying at XYZ University.</li>
+            <li>
+              I have a keen interest in:
+              <ul>
+                <li>Artificial Intelligence</li>
+                <li>Web Development</li>
+                <li>Data Science</li>
+              </ul>
+            </li>
+            <li>
+              My favorite programming languages are:
+              <ol>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+              </ol>
+            </li>
+            <li>
+              Skills and Technologies:
+              <ul>
+                <li>
+                  Frontend:
+                  <ul>
+                    <li>HTML, CSS, JavaScript
+                    </li>
+                    <li>React, Angular</li>
+                  </ul>
+                </li>
+                <li>
+                  Backend:
+                  <ul>
+                    <li>Node.js, Express</li>
+                    <li>Python (Django, Flask)</li>
+                  </ul>
+                </li>
+                <li>
+                  Databases:
+                  <ul>
+                    <li>MySQL, PostgreSQL</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Projects:
+              <ul>
+                <li>
+                  Project 1:
+                  <ul>
+                    <li>
+                      Description: A web application for managing tasks.
+                    </li>
+                    <li>Technologies: React, Node.js, MongoDB</li>
+                    <li>
+                      Features: User authentication, CRUD operations,
+                      real-time updates.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Project 2:
+                  <ul>
+                    <li>
+                      Description: A machine learning model for predicting
+                      house prices.
+                    </li>
+                    <li>Technologies: Python, scikit-learn, Pandas</li>
+                    <li>
+                      Features: Data cleaning, feature engineering, model
+                      training and evaluation.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              In my free time, I enjoy:
+              <ul>
+                <li>Reading tech blogs</li>
+                <li>Playing chess</li>
+                <li>Exploring new technologies</li>
+                <li>Participating in hackathons</li>
+                <li>Contributing to open-source projects</li>
+              </ul>
+            </li>
+            <li>
+              My future goals include:
+              <ul>
+                <li>Becoming a full-stack developer</li>
+                <li>Working on innovative AI projects</li>
+                <li>Starting my own tech company</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+
+    <!-- Projects Section Start -->
+    <section id="projects">
+      <div class="projects-wrap">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-item">
+            <img src="./assets/img/img-3.jpg" alt="Songs Recomendations" />
+            <h3>Techi`s Favorite Songs</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Pariatur, quas velit temporibus impedit dolore cum nulla
+              accusantium. Cupiditate, adipisci ratione!
+            </p>
+            <a href="https://chimomile.github.io/belajar-web/songs.html" class="cta">Click to go there</a>
+          </div>
+          <div class="project-item">
+            <img src="./assets/img/img-4.jpg" alt="POST System App" />
+            <h3>POS System Application</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              repellendus veritatis itaque deleniti nostrum provident incidunt
+              adipisci a minima assumenda.
+            </p>
+            <a href="https://github.com/chimomile/Project-2-Final" class="cta">Click to go there</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+      <div class="contact-wrap">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="cta">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+  </main>
+
+  <!-- Scroll Button Start -->
+  <button id="scrollButton" onclick="scrollToTop()">🔝</button>
+  <!-- Scroll Button end -->
+
+  <!-- Footer and Copyright Start -->
+  <div class="copyright">
+    <!-- <div class="footer-left">#404nf</div> -->
+    <div class="footer-cp">
+      Copyright &copy; 2024 by <span id="author">chimomile</span>. All Rights
+      Reserved.
+    </div>
+    <!-- <div class="footer-summary"><span id="summaryid">~Summary</span></div> -->
+  </div>
+  <!-- Footer and Copyright end -->
+
+  <!-- Pop Up Star -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <div class="profile">
+        <img src="./assets/img/img-2.jpg" alt="techi`s photo" />
+        <h2>Techi Kariska Sari</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+          deleniti ut incidunt reprehenderit atque maxime assumenda minus
+          praesentium quibusdam ex, ducimus obcaecati culpa aspernatur nihil
+          dignissimos illo laudantium voluptates quos? Nam nemo, cumque
+          reiciendis, voluptatum facere commodi numquam nesciunt molestias at
+          blanditiis laboriosam laudantium! Praesentium nobis at nesciunt sunt
+          voluptates cumque modi ab voluptas similique.
+        </p>
+      </div>
+      <button id="closeBtn">Close</button>
+    </div>
+  </div>
+  <!-- Pop Up End -->
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
