@@ -16,6 +16,10 @@
   border: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  ::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	}
 }
 
 body {
@@ -150,14 +154,18 @@ body {
 }
 
 #hero-img {
-  height: 700px;
+  height: 750px;
   width: 500px;
-  margin-left: 1200px;
+  margin-right: 140px;
   border-radius: 50%;
+  box-shadow: 6px 6px 9px var(--col4);
+  margin-top: 150px;
 }
 
 .hero-right {
   position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* ABOUT START */
@@ -167,7 +175,6 @@ body {
   display: flex;
   align-items: center;
   background-color: #f8a7c7;
-
 }
 
 
@@ -312,7 +319,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.8rem;
+  padding: 1.4rem;
   font-size: 22px;
   color: #ffffff;
   background-color: rgb(83, 59, 59);
