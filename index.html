@@ -156,7 +156,8 @@
               Pariatur, quas velit temporibus impedit dolore cum nulla
               accusantium. Cupiditate, adipisci ratione!
             </p>
-            <a href="https://chimomile.github.io/belajar-web/songs.html" class="cta">Click to go there</a>
+            <a href="https://chimomile.github.io/belajar-web/songs.html" target="_blank"
+              rel="noopener noreferrer" class="cta">Click to go there</a>
           </div>
           <div class="project-item">
             <img src="./assets/img/img-4.jpg" alt="POST System App" />
@@ -169,7 +170,7 @@
             <a href="https://github.com/chimomile/Project-2-Final" class="cta">Click to go there</a>
           </div>
           <div class="project-item">
-            <img src="./assets/img/img-5.png" alt="Songs Recomendations" />
+            <img src="./assets/img/img-5.png" alt="Top 10 Movies" />
             <h3>Top 10 Movies</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -178,13 +179,24 @@
             </p>
             <a href="https://chimomile.github.io/all-time-films/" class="cta">Click to go there</a>
           </div>
+          <div class="project-item">
+            <img src="./assets/img/img-6.png" alt="Techi's Calculator" />
+            <h3>Techi`s Calculator</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Pariatur, quas velit temporibus impedit dolore cum nulla
+              accusantium. Cupiditate, adipisci ratione!
+            </p>
+            <a href="https://chimomile.github.io/calculator/" target="_blank" rel="noopener noreferrer"
+              class="cta">Click to go there</a>
+          </div>
         </div>
       </div>
     </section>
     <!-- Projects Section end -->
 
     <!-- Contact Section Start -->
-    <section id="contact">
+    <section id="contact" class="contact-form">
       <div class="contact-wrap">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/xbjneeew" method="post">
@@ -192,12 +204,12 @@
           <input type="text" id="name" name="name" required />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="text" id="email" name="email" />
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
 
-          <button type="submit" class="cta">Send Message</button>
+          <button id="form-btn" type="submit" class="cta">Send Message</button>
         </form>
       </div>
     </section>
@@ -242,6 +254,7 @@
 
   <!-- JS -->
   <script src="script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>

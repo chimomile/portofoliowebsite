@@ -83,6 +83,40 @@ function scrollToTop() {
 }
 // SCROLL BUTTON END
 
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-form form");
+  const emailInput = document.getElementById("email");
+  const submitBtn = document.getElementById("form-btn");
+
+  function validateEmail(email) {
+    const techi = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return techi.test(String(email).toLowerCase());
+  }
+
+  submitBtn.addEventListener("click", function() {
+    swal({
+  title: "Yeaayy!",
+  text: "Your message was submitted successfully!",
+  icon: "success",
+  button: "awwww yeaayyy",
+});
+  })
+
+  form.addEventListener("submit", function (event) {
+    const email = emailInput.value.trim();
+    if (!validateEmail(email)) {
+      event.preventDefault();
+      swal({
+  title: "Oops there's something wrong!",
+  text: "Your email might be wrong!",
+  icon: "warning",
+  button: "try again",
+});
+    }
+  });
+});
+
+
 // POP UP START
 const authorSpan = document.getElementById("author");
 const popup = document.getElementById("popup");
